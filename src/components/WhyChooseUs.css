@@ -1,0 +1,199 @@
+.why-choose-section {
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+    /* Use the same background or slightly offset if needed, but keeping consistent*/
+    background-color: var(--bg-main);
+}
+
+.why-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.why-subtitle {
+    color: var(--primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(157, 178, 48, 0.1);
+    border-radius: 9999px;
+}
+
+.why-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.8rem;
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.why-desc {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.benefit-card {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 1.5rem;
+    /* Soft shadow specifically for these cards */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.benefit-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: var(--primary);
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(157, 178, 48, 0.2);
+}
+
+.benefit-card:hover::before {
+    width: 100%;
+}
+
+.benefit-card:hover .icon-box {
+    background: white;
+    color: var(--primary);
+}
+
+.benefit-card:hover h3,
+.benefit-card:hover p {
+    color: white;
+    /* Make text white on hover since background becomes primary */
+    transition: color 0.3s;
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background: var(--bg-main);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.benefit-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.4rem;
+    color: var(--text-main);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.benefit-text {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Decorative background elements */
+.decoration-rice {
+    position: absolute;
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.decoration-1 {
+    top: 10%;
+    left: -5%;
+    width: 300px;
+    transform: rotate(45deg);
+}
+
+.decoration-2 {
+    bottom: 5%;
+    right: -5%;
+    width: 400px;
+    transform: rotate(-15deg);
+}
+
+@media (max-width: 768px) {
+    .why-title {
+        font-size: 2rem;
+    }
+
+    .why-choose-section {
+        padding: 4rem 0;
+    }
+}
+
+/* Falling Rice Animation - Duplicated from About.css for consistency */
+.falling-rice-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.rice-grain {
+    position: absolute;
+    /* Rich Golden Rice Grain styling */
+    background: linear-gradient(135deg, #fff8db 10%, #d4af37 100%);
+    /* Rich golden gradient */
+    border-radius: 50% 50% 50% 50% / 90% 90% 10% 10%;
+    /* Elongated rice shape */
+    transform: rotate(45deg);
+    animation: riceFall linear infinite;
+    filter: drop-shadow(0 2px 4px rgba(139, 69, 19, 0.4));
+    /* Darker brown shadow for contrast */
+    box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.8);
+    /* Highlighting */
+}
+
+@keyframes riceFall {
+    0% {
+        transform: translateY(-50px) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(105vh) rotate(360deg);
+        opacity: 0;
+    }
+}

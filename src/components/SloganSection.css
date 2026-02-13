@@ -1,0 +1,100 @@
+.slogan-section {
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    padding: 4rem 0;
+}
+
+.slogan-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Parallax effect */
+    z-index: 0;
+}
+
+.slogan-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /* Dark overlay */
+    z-index: 1;
+}
+
+.slogan-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+}
+
+.slogan-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+
+.slogan-text {
+    font-family: 'Outfit', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.slogan-text.primary {
+    color: #fff;
+}
+
+.slogan-text.secondary {
+    color: #fff;
+}
+
+.slogan-subtext {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .slogan-section {
+        min-height: 40vh;
+        padding: 3rem 0;
+    }
+
+    .slogan-text {
+        font-size: 2rem;
+    }
+
+    .slogan-subtext {
+        font-size: 1rem;
+    }
+
+    .slogan-background {
+        background-attachment: scroll;
+        /* Disable parallax on mobile for performance */
+    }
+}

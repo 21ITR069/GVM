@@ -1,0 +1,65 @@
+.poster-section {
+    padding: 0;
+    /* Remove padding for full width */
+    margin: 0;
+    /* Remove margin */
+    background-color: var(--bg-main);
+    overflow: hidden;
+    perspective: 1000px;
+    width: 100%;
+}
+
+.poster-container {
+    max-width: 100%;
+    /* Full width */
+    margin: 0;
+    padding: 0;
+    /* No padding */
+    position: relative;
+    z-index: 10;
+}
+
+.poster-wrapper {
+    position: relative;
+    border-radius: 0;
+    /* Remove border radius for full width */
+    overflow: hidden;
+    box-shadow: none;
+    /* Remove shadow for seamless look */
+    transform-style: preserve-3d;
+}
+
+.poster-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease-out;
+}
+
+/* Optional: Add a subtle overlay or shine effect */
+.poster-shine {
+    display: none;
+    /* Hide overlay as requested */
+}
+
+@media (max-width: 768px) {
+    .poster-section {
+        padding: 0;
+        margin-bottom: 0;
+        /* Ensure no gap before footer */
+    }
+
+    .poster-container {
+        padding: 0;
+    }
+
+    .poster-image {
+        object-fit: contain;
+        /* Show full image without cropping */
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        /* Let height adapt to image aspect ratio */
+    }
+}

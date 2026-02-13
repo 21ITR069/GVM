@@ -1,0 +1,131 @@
+.certifications-section {
+    padding: 4rem 0;
+    background-color: var(--bg-main);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.cert-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.cert-logos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+}
+
+.cert-logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 100px;
+    /* Fixed height for alignment */
+    /* filter: grayscale(100%); Removed grayscale */
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.cert-logo-item:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.cert-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.cert-text-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cert-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+}
+
+.cert-description {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .certifications-section {
+        padding: 3rem 0;
+    }
+
+    .cert-logos-grid {
+        gap: 2rem;
+    }
+
+    .cert-logo-item {
+        width: 130px;
+        height: 90px;
+    }
+
+    .cert-title {
+        font-size: 1.5rem;
+    }
+
+    .cert-description {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+}
+
+/* Falling Rice Animation */
+.falling-rice-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.rice-grain {
+    position: absolute;
+    background: linear-gradient(135deg, #fff8db 10%, #d4af37 100%);
+    border-radius: 50% 50% 50% 50% / 90% 90% 10% 10%;
+    transform: rotate(45deg);
+    animation: riceFall linear infinite;
+    filter: drop-shadow(0 2px 4px rgba(139, 69, 19, 0.4));
+    box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.8);
+}
+
+@keyframes riceFall {
+    0% {
+        transform: translateY(-50px) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(105vh) rotate(360deg);
+        opacity: 0;
+    }
+}

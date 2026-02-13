@@ -1,0 +1,42 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mobile-specific section ordering */
+@media (max-width: 768px) {
+  .section-hero {
+    order: 1;
+  }
+
+  .section-about {
+    order: 2;
+  }
+
+  .section-why {
+    order: 3;
+  }
+
+  .section-slogan {
+    order: 4;
+  }
+
+  .section-certifications {
+    order: 5;
+  }
+
+  .section-poster {
+    order: 6;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

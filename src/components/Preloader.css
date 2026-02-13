@@ -1,0 +1,48 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-main);
+    /* Match main background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    perspective: 1000px;
+    /* Enable 3D space */
+}
+
+.preloader-logo-container {
+    transform-style: preserve-3d;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.preloader-logo {
+    width: 180px;
+    /* Slightly larger for impact */
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.15));
+    /* Soft shadow for depth */
+}
+
+/* Optional: Add a subtle glow or ring effect behind */
+.preloader-ring {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    border: 2px solid rgba(157, 178, 48, 0.2);
+    /* Primary color low opacity */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: -1;
+}

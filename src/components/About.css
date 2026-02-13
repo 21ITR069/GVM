@@ -1,0 +1,198 @@
+.about-section {
+    background-color: #faf6eb;
+    /* Light background */
+    position: relative;
+    overflow: hidden;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .about-grid {
+        grid-template-columns: 1fr 1.2fr;
+    }
+}
+
+/* Image Styling */
+.about-image-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.image-frame {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.image-frame::after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: -1rem;
+    width: 60%;
+    height: 80%;
+    background: var(--primary);
+    z-index: -1;
+    border-radius: 1rem;
+    opacity: 0.2;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: scale(1.05);
+    /* Slight zoom for effect */
+    transition: transform 0.5s ease;
+    border-radius: 20px;
+    /* Rounded corners */
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    background: var(--primary);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.experience-badge .years {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.experience-badge .text {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    text-align: center;
+}
+
+/* Text Styling */
+.about-content {
+    /* Use 'left' alignment unless on mobile */
+    text-align: left;
+}
+
+.subtitle {
+    color: var(--primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5rem;
+    color: var(--primary-dark);
+    margin-bottom: 0.5rem;
+}
+
+.pride-text {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    color: var(--secondary);
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.highlight {
+    color: var(--primary);
+}
+
+.text-content p {
+    color: black;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+
+.features-inline {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-dark);
+    font-weight: 600;
+}
+
+.feature-item .icon {
+    color: var(--secondary);
+}
+
+.btn-primary.mt-4 {
+    margin-top: 1rem;
+}
+
+/* Specific background override */
+.about-section {
+    background-color: var(--bg-main);
+}
+
+/* Falling Rice Animation */
+.falling-rice-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.rice-grain {
+    position: absolute;
+    /* Rich Golden Rice Grain styling */
+    background: linear-gradient(135deg, #fff8db 10%, #d4af37 100%);
+    /* Rich golden gradient */
+    border-radius: 50% 50% 50% 50% / 90% 90% 10% 10%;
+    /* Elongated rice shape */
+    transform: rotate(45deg);
+    animation: riceFall linear infinite;
+    filter: drop-shadow(0 2px 4px rgba(139, 69, 19, 0.4));
+    /* Darker brown shadow for contrast */
+    box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.8);
+    /* Highlighting */
+}
+
+@keyframes riceFall {
+    0% {
+        transform: translateY(-50px) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(105vh) rotate(360deg);
+        opacity: 0;
+    }
+}

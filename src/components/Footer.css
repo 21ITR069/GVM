@@ -1,0 +1,198 @@
+.footer-section {
+    background: linear-gradient(135deg, #0f1c15 0%, #1a2e23 100%);
+    color: white;
+    padding: 3rem 0 2rem;
+    /* Reduced top padding for seamless connection */
+    margin-top: 0;
+    /* No margin to attach to poster */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle pattern overlay */
+.footer-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Golden Rice Plant Background Design */
+.footer-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    height: 400px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath fill='%23cba11b' fill-opacity='0.1' d='M100,200 C110,150 140,120 160,80 C170,60 180,40 180,20 C180,10 170,10 170,20 C160,50 140,80 120,110 C100,140 80,170 80,200 Z'/%3E%3Cpath fill='%23cba11b' fill-opacity='0.1' d='M90,200 C100,160 120,130 140,100 C150,85 160,70 160,60 C160,50 150,55 150,65 C140,90 110,140 80,190 Z'/%3E%3Cpath fill='%23cba11b' fill-opacity='0.1' d='M110,200 C120,160 150,130 170,100 C180,85 190,70 190,60 C190,50 180,55 180,65 C170,90 140,140 100,190 Z'/%3E%3Cpath fill='%23cba11b' fill-opacity='0.08' d='M60,200 C70,140 100,100 130,50 C140,30 150,10 150,0 C140,0 130,10 120,30 C100,80 60,140 40,200 Z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 10;
+}
+
+@media (min-width: 768px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: 2fr 1fr 1.5fr;
+        gap: 2rem;
+    }
+}
+
+/* Brand Column */
+.footer-brand-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo-img {
+    height: 120px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.footer-desc {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    max-width: 300px;
+}
+
+/* Links Columns */
+.footer-links-col h4,
+.footer-contact-col h4 {
+    color: var(--secondary);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.footer-links-col h4::after,
+.footer-contact-col h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 40px;
+    height: 2px;
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+.footer-links-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.footer-links-col a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-links-col a:hover {
+    color: var(--secondary);
+    transform: translateX(5px);
+}
+
+/* Contact Column */
+.footer-contact-col p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.contact-link strong {
+    color: white;
+    margin-right: 0.5rem;
+}
+
+/* Divider */
+.footer-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 10;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+    z-index: 10;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+    .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.6);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.social-icon:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--primary-dark);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(203, 161, 27, 0.3);
+}
