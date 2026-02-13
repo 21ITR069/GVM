@@ -40,7 +40,7 @@ const Preloader = () => {
                             }}
                         >
                             <div className="logo-3d-wrapper">
-                                <img src={logo} alt="GVM Rice Mill" className="preloader-logo" />
+                                <img src={logo} alt="GMV Rice Mill" className="preloader-logo" />
                                 <div className="logo-shadow"></div>
                             </div>
                         </motion.div>
@@ -52,7 +52,7 @@ const Preloader = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.5, duration: 0.5 }}
                         >
-                            <h2>GVM Rice Millers</h2>
+                            <h2>GMV Rice Millers</h2>
                             <div className="loading-dots">
                                 <motion.span
                                     animate={{ opacity: [0, 1, 0] }}

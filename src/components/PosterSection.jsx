@@ -25,7 +25,7 @@ const PosterSection = () => {
                 >
                     <img
                         src={posterImg}
-                        alt="GVM Rice Mill - Rooted in Tradition, Served with Purity"
+                        alt="GMV Rice Mill - Rooted in Tradition, Served with Purity"
                         className="poster-image"
                     />
                 </motion.div>

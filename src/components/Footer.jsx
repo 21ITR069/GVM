@@ -17,7 +17,7 @@ const Footer = () => {
                         transition={{ duration: 0.6 }}
                         viewport={{ once: true }}
                     >
-                        <img src={logo} alt="GVM Rice Mill" className="footer-logo-img" />
+                        <img src={logo} alt="GMV Rice Mill" className="footer-logo-img" />
                         <p className="footer-desc">
                             Providing majestic quality rice since 1980. Committed to excellence, processed with care and delivered with pride.
                         </p>
@@ -76,7 +76,7 @@ const Footer = () => {
                     transition={{ duration: 0.6, delay: 0.6 }}
                     viewport={{ once: true }}
                 >
-                    <p>&copy; {new Date().getFullYear()} GVM Rice Mill. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} GMV Rice Mill. All rights reserved.</p>
                     <div className="social-icons">
                         <a href="#" className="social-icon" aria-label="Facebook"><Facebook size={18} /></a>
                         <a href="#" className="social-icon" aria-label="X"><X size={18} /></a>

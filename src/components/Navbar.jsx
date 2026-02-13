@@ -68,7 +68,7 @@ const Navbar = () => {
                 >
                     <img
                         src={logo}
-                        alt="GVM Rice Mill"
+                        alt="GMV Rice Mill"
                         className="logo-img"
                     />
                 </div>

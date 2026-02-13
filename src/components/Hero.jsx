@@ -4,7 +4,7 @@ import videoBg from '../assets/rice-video.mp4';
 import './Hero.css';
 
 const textSequence = [
-    { id: 1, text: "GVM", subtext: "RICE MILLERS", position: "left" },
+    { id: 1, text: "GMV", subtext: "RICE MILLERS", position: "left" },
     { id: 2, text: "Premium Products", subtext: "From the House of GMV", position: "right" },
     { id: 3, text: "A Promise of Quality", subtext: "", position: "left" }
 ];

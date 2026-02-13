@@ -96,7 +96,7 @@ const Certifications = () => {
                     >
                         <h3 className="cert-title">Commitment to Excellence</h3>
                         <p className="cert-description">
-                            At <strong>GVM Rice Mill</strong>, quality is not just a standard—it's our heritage.
+                            At <strong>GMV Rice Mill</strong>, quality is not just a standard—it's our heritage.
                             Proudly <strong>Made in India</strong>, our products meet the highest safety and hygiene benchmarks set by <strong>FSSAI</strong> and global ISO standards.
                             From sourcing the finest paddy to the final packaging, we ensure that every grain delivering to your home is pure, authentic, and full of flavor.
                         </p>

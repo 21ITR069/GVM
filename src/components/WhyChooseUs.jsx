@@ -12,7 +12,7 @@ const features = [
     {
         icon: <Leaf size={32} />,
         title: "From Farm to Family",
-        description: "Reviewing our roots, we source directly from local farmers who treat their land with respect. This direct connection ensures every bag of GVM rice is fresh, ethical, and supports our farming community."
+        description: "Reviewing our roots, we source directly from local farmers who treat their land with respect. This direct connection ensures every bag of GMV rice is fresh, ethical, and supports our farming community."
     },
     {
         icon: <UtensilsCrossed size={32} />,
@@ -22,7 +22,7 @@ const features = [
     {
         icon: <Heart size={32} />,
         title: "Health in Every Grain",
-        description: "We process our rice minimally to retain its essential nutrients. Rich in fiber and natural goodness, GVM rice is the perfect foundation for a healthy, balanced diet for your loved ones."
+        description: "We process our rice minimally to retain its essential nutrients. Rich in fiber and natural goodness, GMV rice is the perfect foundation for a healthy, balanced diet for your loved ones."
     }
 ];
 
@@ -107,7 +107,7 @@ const WhyChooseUs = () => {
                         transition={{ delay: 0.2 }}
                         viewport={{ once: true }}
                     >
-                        For decades, GVM Rice Mill has been a silent partner in your family gatherings, festive feasts, and daily meals. Here is why thousands of homes trust us.
+                        For decades, GMV Rice Mill has been a silent partner in your family gatherings, festive feasts, and daily meals. Here is why thousands of homes trust us.
                     </motion.p>
                 </div>
 
