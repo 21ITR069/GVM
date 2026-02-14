@@ -81,12 +81,13 @@ const About = () => {
 
                         <div className="text-content">
                             <p>
-                                <strong>GMV Rice Millers</strong> is a renowned name in the rice milling industry, deeply rooted in the heritage of <strong>Rasipuram, Tamil Nadu</strong>. Established over 50 years ago, our family-run legacy continues to produce premium-quality rice for customers worldwide. We pride ourselves on blending traditional methods with modern techniques to ensure top-notch quality and consistency in every grain.
+                                <strong>GMV Rice Millers</strong> is a <strong>premier global rice exporter</strong> and manufacturer, deeply rooted in the heritage of <strong>Rasipuram, Tamil Nadu</strong>. Established over 50 years ago, our family-run legacy continues to produce premium <strong>export-quality rice</strong> for international markets across the globe. We pride ourselves on blending traditional methods with modern techniques to ensure top-notch quality and consistency in every grain.
                             </p>
                             <p>
-                                Since <strong>1980</strong>, we have been a leading processor and exporter of the finest Indian varieties, including Basmati, Sona Masoori, and Pusa. At GMV, every grain is a promise of purity. Sourced from trusted suppliers and processed with state-of-the-art technology, we meticulously monitor every step to deliver the freshest, most flavorful rice to your table. Our team is dedicated to customer satisfaction, ensuring that the GMV name remains synonymous with trust and quality.
+                                Since <strong>1980</strong>, we have been a leading processor and exporter of the finest <strong>Indian rice varieties</strong>, specializing in Basmati, Sona Masoori, and Pusa for global distribution. At GMV, every grain meets <strong>international quality standards</strong>. Sourced from trusted suppliers and processed with state-of-the-art <strong>export-grade technology</strong>, we meticulously monitor every step to deliver the freshest, most flavorful rice to your table. Our team is dedicated to customer satisfaction, ensuring that the GMV name remains synonymous with trust and quality worldwide.
                             </p>
                         </div>
+
 
                         <div className="features-inline">
                             <div className="feature-item">
@@ -106,8 +107,8 @@ const About = () => {
                         <button className="btn-primary mt-4">Discover More</button>
                     </motion.div>
                 </div>
-            </div>
-        </section>
+            </div >
+        </section >
     );
 };
 

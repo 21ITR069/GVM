@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Award, ShieldCheck } from 'lucide-react';
 import makeInIndia from '../assets/logos/make-in-india-logo_650x400_61433263706-removebg-preview.png';
 import fssai from '../assets/logos/png-clipart-food-safety-and-standards-authority-of-india-logo-india-food-text-removebg-preview.png';
-import iso from '../assets/logos/business-company-quality-international-standardize-organization-iso-9001-bronze-medal-with-red-ribbon-free-vector-removebg-preview.png';
+import iso from '../assets/logos/pngtree-iso-9001-sticker-label-png-png-image_3813039__1_-removebg-preview.png';
 import premium from '../assets/logos/premium-quality-golden-medal-icon-seal-sign-isolated-on-white-background-illustration-free-vector-removebg-preview.png';
 import './Certifications.css';
 

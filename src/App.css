@@ -24,16 +24,20 @@ main {
     order: 3;
   }
 
-  .section-slogan {
+  .section-global {
     order: 4;
   }
 
-  .section-certifications {
+  .section-slogan {
     order: 5;
   }
 
-  .section-poster {
+  .section-certifications {
     order: 6;
+  }
+
+  .section-poster {
+    order: 7;
   }
 }
 

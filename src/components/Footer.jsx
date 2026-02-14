@@ -19,7 +19,7 @@ const Footer = () => {
                     >
                         <img src={logo} alt="GMV Rice Mill" className="footer-logo-img" />
                         <p className="footer-desc">
-                            Providing majestic quality rice since 1980. Committed to excellence, processed with care and delivered with pride.
+                            Providing majestic quality rice since 1980. Renowned manufacturer and global exporter, delivering excellence to customers worldwide.
                         </p>
                     </motion.div>
 

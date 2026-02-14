@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Leaf, Heart, ShieldCheck, UtensilsCrossed } from 'lucide-react';
+import { Leaf, Heart, ShieldCheck, UtensilsCrossed, Globe } from 'lucide-react';
 import './WhyChooseUs.css';
 
 const features = [
@@ -20,9 +20,9 @@ const features = [
         description: "Rice isn't just a side dish; it's the heart of the meal. Our aging process locks in the natural aroma, ensuring that familiar, comforting fragrance fills your home every time you cook."
     },
     {
-        icon: <Heart size={32} />,
-        title: "Health in Every Grain",
-        description: "We process our rice minimally to retain its essential nutrients. Rich in fiber and natural goodness, GMV rice is the perfect foundation for a healthy, balanced diet for your loved ones."
+        icon: <Globe size={32} />,
+        title: "Global Reach & Quality",
+        description: "As a trusted exporter, we bring the finest Indian rice to tables across the world. Our international packing standards ensure that the aroma and freshness remain intact, no matter the destination."
     }
 ];
 

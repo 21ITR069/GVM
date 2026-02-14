@@ -42,7 +42,7 @@ const Products = () => {
             <div className="container">
                 <div className="section-header text-center">
                     <h2 className="section-title">Our Premium Selection</h2>
-                    <p className="section-subtitle">Discover the variety of finest grains processed with care.</p>
+                    <p className="section-subtitle">Discover the variety of finest grains processed with care for global markets.</p>
                 </div>
 
                 <div className="products-grid">

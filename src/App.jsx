@@ -7,6 +7,7 @@ import './App.css';
 // Lazy load components below the fold
 const About = React.lazy(() => import('./components/About'));
 const WhyChooseUs = React.lazy(() => import('./components/WhyChooseUs'));
+const GlobalExport = React.lazy(() => import('./components/GlobalExport'));
 const SloganSection = React.lazy(() => import('./components/SloganSection'));
 const Certifications = React.lazy(() => import('./components/Certifications'));
 const PosterSection = React.lazy(() => import('./components/PosterSection'));
@@ -24,6 +25,7 @@ function App() {
           <Suspense fallback={<div className="section-loader"></div>}>
             <div className="section-about"><About /></div>
             <div className="section-why"><WhyChooseUs /></div>
+            <div className="section-global"><GlobalExport /></div>
             <div className="section-slogan"><SloganSection /></div>
             <div className="section-certifications"><Certifications /></div>
             <div className="section-poster"><PosterSection /></div>
